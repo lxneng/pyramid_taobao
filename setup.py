@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 
 setup(name='pyramid_taobao',
-      version='0.1',
+      version='0.1.1',
       description='Pyramid configuration with OpenTaobao-API integration',
       author='Eric Lo',
       author_email='lxneng@gmail.com',
