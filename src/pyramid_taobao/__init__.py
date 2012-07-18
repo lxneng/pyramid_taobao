@@ -17,7 +17,6 @@ class Taobao(object):
     def get_sign(self, params):
         params.update({'app_key': self.app_key, 'timestamp': self.get_time(),
             'v': '2.0'})
-        print sorted(params.items())
         src = self.sercet_code + ''.join(["%s%s" % (k, v)\
                 for k, v in sorted(params.iteritems())])
         return md5.new(src).hexdigest().upper()
