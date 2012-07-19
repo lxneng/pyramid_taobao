@@ -6,3 +6,4 @@ develop-eggs/
 parts/
 *~
 *.egg-info/
+dist/

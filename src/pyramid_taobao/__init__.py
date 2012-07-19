@@ -21,7 +21,8 @@ class Taobao(object):
                 for k, v in sorted(params.iteritems())])
         return md5.new(src).hexdigest().upper()
 
-    def get_result(self, params):
+    def get_result(self, data):
+        params = data.copy()
         params['sign'] = self.get_sign(params)
         rsp = requests.get('http://gw.api.taobao.com/router/rest',
                 params=params)
